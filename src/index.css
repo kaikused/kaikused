@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Estilos para el contenido del blog (clase 'prose') */
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: #1a202c; /* dark-bg */
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+.prose h2 { font-size: 1.875rem; } /* 30px */
+.prose h3 { font-size: 1.5rem; }   /* 24px */
+
+.prose p {
+  color: #2d3748; /* gris oscuro */
+  line-height: 1.7;
+  margin-bottom: 1.25em;
+}
+
+.prose a {
+  color: #FF5733; /* primary */
+  text-decoration: underline;
+}
+.prose a:hover {
+  color: #33FFB0; /* secondary */
+}
+
+.prose ul, .prose ol {
+  list-style-position: inside;
+  margin-left: 1.5em;
+  margin-bottom: 1.25em;
+}
+.prose ul { list-style-type: disc; }
+.prose ol { list-style-type: decimal; }
+
+.prose li {
+  margin-bottom: 0.5em;
+}
+
+.prose strong {
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.prose blockquote {
+  border-left: 4px solid #FF5733; /* primary */
+  padding-left: 1em;
+  margin-left: 0;
+  font-style: italic;
+  color: #4a5568;
+}
+/* --- Estilos para Incrustados (Embeds) Responsivos --- */
+
+/* Contenedor para Vídeos (YouTube, Vimeo, etc. - Proporción 16:9) */
+.embed-container-16-9 {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625) */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.embed-container-16-9 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+/* Contenedor para Podcasts (Spotify - Altura fija) */
+.embed-container-spotify {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.embed-container-spotify iframe {
+  width: 100%;
+  height: 352px; /* Altura estándar de Spotify */
+  border-radius: 12px;
+}
