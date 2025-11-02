@@ -1,0 +1,37 @@
+---
+title: 'Mi Primer Post Multimedia'
+date: '2025-11-02'
+---
+
+# ¡Bienvenido a mi nuevo blog!
+
+Este es un párrafo normal escrito en Markdown.
+
+## Fotos
+
+Aquí incluyo una foto usando el componente de React que creé.
+
+import { BlogImage } from '/src/components/blog/BlogImage.jsx'
+
+<BlogImage
+  src="/images/posts/mi-foto-genial.jpg"
+  alt="Una descripción de mi foto"
+/>
+
+## Vídeos
+
+Y aquí, un vídeo de YouTube. Solo necesito la URL de "embed" que YouTube proporciona.
+
+import { VideoPlayer } from '/src/components/blog/VideoPlayer.jsx'
+
+<VideoPlayer src="https://www.youtube.com/embed/dQw4w9WgXcQ" />
+
+## Podcasts
+
+Finalmente, un podcast de Spotify. Solo necesito el ID del episodio.
+
+import { SpotifyEmbed } from '/src/components/blog/SpotifyEmbed.jsx'
+
+<SpotifyEmbed episodeId="6n3B6T30sFfbmP8s3P93aT" />
+
+El texto puede continuar después del componente. ¡Así de fácil!
